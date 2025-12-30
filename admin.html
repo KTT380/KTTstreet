@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin | KTT Street</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>ADMIN PANEL</h1>
+  <p>KTT Street</p>
+</header>
+
+<section>
+  <h3>Pre-Order Status</h3>
+  <button onclick="openOrder()" class="btn">OPEN PRE-ORDER</button>
+  <button onclick="closeOrder()" class="btn">CLOSE PRE-ORDER</button>
+
+  <p id="status"></p>
+</section>
+
+<script>
+function openOrder(){
+  localStorage.setItem("preorder","open");
+  document.getElementById("status").innerText="Pre-Order: OPEN";
+}
+
+function closeOrder(){
+  localStorage.setItem("preorder","close");
+  document.getElementById("status").innerText="Pre-Order: CLOSED";
+}
+</script>
+
+</body>
+</html>
