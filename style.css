@@ -66,3 +66,26 @@ section{
   background: linear-gradient(to right, transparent, white, transparent);
   margin: 25px auto;
 }
+/* ===== Grid similar to Stussy ===== */
+.products.grid-like {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* Card Hover Effect */
+.card img {
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card p {
+  opacity: .7;
+  font-size: 14px;
+}
